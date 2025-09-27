@@ -70,12 +70,18 @@ const Sidebar = () => {
         { id: 'recruiter', title: 'Recruiter' }
       ]
     },
-    {
-      id: 'connect',
-      title: 'Connect',
+   {
+      id: 'AI_AGENTS',
+      title: 'AI Agents',
       expandable: false,
       items: []
-    }
+    },
+     {
+      id: 'REPO_SETUP',
+      title: 'How to setup complete repo',
+      expandable: false,
+      items: []
+    },
   ];
 
   const toggleSection = (sectionId) => {

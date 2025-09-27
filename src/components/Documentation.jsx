@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-
+import AI_Agetnts from './AI_Agents';
+import Repo_setup from './Repo_setup';
 const Documentation = () => {
   const { isDark } = useTheme();
 
@@ -122,14 +123,6 @@ const Documentation = () => {
             </div>
           </div>
 
-          <div className={`p-6 rounded-lg border ${isDark ? 'bg-blue-900/20 border-blue-700' : 'bg-blue-50 border-blue-200'}`}>
-            <h3 className={`font-semibold mb-3 ${isDark ? 'text-blue-400' : 'text-blue-900'}`}>
-              🔗 Integration Flow:
-            </h3>
-            <p className={`text-sm ${isDark ? 'text-blue-300' : 'text-blue-800'}`}>
-              Frontend → Backend API → Smart Contracts (Hedera) → Workflows → AI Analysis → GitHub Integration
-            </p>
-          </div>
         </section>
 
         {/* How to use PullQuest Sections */}
@@ -288,34 +281,15 @@ const Documentation = () => {
           </div>
         </section>
 
-        {/* Connect Section */}
-        <section id="connect" className="mb-16">
-          <h1 className={`text-4xl font-bold mb-8 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-            Connect with PullQuest
-          </h1>
-          <p className={`text-lg mb-8 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-            Get in touch with our team for support, partnerships, or general inquiries.
-          </p>
-
-          <div className={`p-8 rounded-lg border text-center ${isDark ? 'bg-gray-800 border-gray-700' : 'bg-gray-50 border-gray-200'}`}>
-            <h2 className={`text-2xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-              📧 Contact Us
-            </h2>
-            <p className={`text-base mb-6 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-              For inquiries, support, or collaboration opportunities, reach out to us directly:
-            </p>
-            <a 
-              href="mailto:contact@pullquest.dev"
-              className={`inline-flex items-center px-6 py-3 rounded-lg font-medium transition-colors ${
-                isDark 
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white' 
-                  : 'bg-blue-600 hover:bg-blue-700 text-white'
-              }`}
-            >
-              contact@pullquest.dev
-            </a>
-          </div>
+       {/* AI Agents Section - NEWLY ADDED */}
+        <section id="AI_AGENTS" className="mb-16">
+         <AI_Agetnts/>
         </section>
+
+        <section id="REPO_SETUP" className="mb-16">
+            <Repo_setup/>
+        </section>
+            
       </div>
     </div>
   );

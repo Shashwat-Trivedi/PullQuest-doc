@@ -12,7 +12,8 @@ const Quicklinks = () => {
     { id: 'maintainer', title: 'Maintainer Guide' },
     { id: 'contributor', title: 'Contributor Guide' },
     { id: 'recruiter', title: 'Recruiter Guide' },
-    { id: 'connect', title: 'Connect with PullQuest' }
+    { id: 'REPO_SETUP', title: 'How to setup' },
+    { id: 'AI_AGENTS', title: 'Make your AI Agents' }
   ];
 
   return (
